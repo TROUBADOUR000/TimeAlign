@@ -11,7 +11,7 @@ PyTorch Implementation of TimeAlign.
 
 TimeAlign is a lightweight, plug-and-play framework that bridges the distributional gap in time series forecasting by aligning past and future representations through a reconstruction-based alignment task. The implementation of alignment is located in `./layers/Alignment.py`.
 
-![](./assets/pipeline.pdf)
+![](assets/pipeline.pdf)
 
 ## 🛠 Prerequisites
 
