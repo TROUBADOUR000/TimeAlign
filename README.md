@@ -19,9 +19,9 @@ Ensure you are using Python 3.10.18 and install the necessary dependencies.
 
 ## 📊 Prepare Datastes
 
-Begin by downloading the required datasets. All datasets are conveniently available at [iTransformer](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link). Create a separate folder named `./data` and neatly organize all the csv files as shown below:
+Begin by downloading the required datasets. All datasets are conveniently available at [iTransformer](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link). Create a separate folder named `./dataset` and neatly organize all the csv files as shown below:
 ```
-data
+dataset
 └── electricity.csv
 └── ETTh1.csv
 └── ETTh2.csv
