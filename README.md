@@ -5,13 +5,13 @@ PyTorch Implementation of TimeAlign.
 
 🚩 2026-01-26: TimeAlign has been accepted as ICLR 2026 Poster.
 
-🚩 2025-09-21: Initial upload to arXiv [PDF](https://arxiv.org/pdf/2509.14181).
+🚩 2025-09-21: Initial upload to arXiv ([PDF](https://arxiv.org/pdf/2509.14181)).
 
 ## 🌟 Overview
 
 TimeAlign is a lightweight, plug-and-play framework that bridges the distributional gap in time series forecasting by aligning past and future representations through a reconstruction-based alignment task. The implementation of alignment is located in `./layers/Alignment.py`.
 
-![](./assets/pipline.png)
+![](./assets/pipline.pdf)
 
 ## 🛠 Prerequisites
 
