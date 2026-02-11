@@ -98,14 +98,14 @@ class Model(nn.Module):
             x = x + self.encoder[i](x)
             if self.layer_norm:
                 x = self.norm_x[i](x)
-        #     if is_training:
-        #         x_ = self.ffn[i](x)
-        #         y = y + self.autoencoder[i](y)
-        #         if self.layer_norm:
-        #             y = self.norm_y[i](y)
-        #         # align_loss += self.align(x_, y)
-        #         align_loss += self.align(x_, y.detach())
-        # align_loss /= self.e_layers
+            if is_training:
+                x_ = self.ffn[i](x)
+                y = y + self.autoencoder[i](y)
+                if self.layer_norm:
+                    y = self.norm_y[i](y)
+                # align_loss += self.align(x_, y)
+                align_loss += self.align(x_, y.detach())
+        align_loss /= self.e_layers
 
         # [B, C, N, D]
         # print(x.reshape(-1, C, self.patch_num, self.d_model).shape)
